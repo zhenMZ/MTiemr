@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoViewController">
+            <connections>
+                <outlet property="lable1" destination="Oid-8O-eqx" id="96T-AI-TR4"/>
+                <outlet property="lable2" destination="czK-s2-edi" id="Gm5-hM-dGH"/>
+                <outlet property="tableView" destination="dzo-v6-Mrq" id="qMg-q5-SvP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oid-8O-eqx">
+                    <rect key="frame" x="166" y="120" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czK-s2-edi">
+                    <rect key="frame" x="166" y="191" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dzo-v6-Mrq">
+                    <rect key="frame" x="0.0" y="262" width="375" height="405"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dzo-v6-Mrq" firstAttribute="top" secondItem="czK-s2-edi" secondAttribute="bottom" constant="50" id="1Ra-uG-kS5"/>
+                <constraint firstAttribute="trailing" secondItem="dzo-v6-Mrq" secondAttribute="trailing" id="8rS-0l-Ve0"/>
+                <constraint firstItem="Oid-8O-eqx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="KZl-FE-4H8"/>
+                <constraint firstAttribute="bottom" secondItem="dzo-v6-Mrq" secondAttribute="bottom" id="SKr-1j-9Ga"/>
+                <constraint firstItem="Oid-8O-eqx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rdQ-MP-tni"/>
+                <constraint firstItem="dzo-v6-Mrq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tdp-vy-Fzb"/>
+                <constraint firstItem="czK-s2-edi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vjG-cV-ZPi"/>
+                <constraint firstItem="czK-s2-edi" firstAttribute="top" secondItem="Oid-8O-eqx" secondAttribute="bottom" constant="50" id="xnB-Oi-NHE"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
