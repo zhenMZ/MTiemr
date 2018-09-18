@@ -7,11 +7,11 @@
 
 ##使用方法
 ```
-	1.导入MZTimeManager文件夹到项目中
-	2.在需要使用的页面导入‘ #import "MZCountDownManager.h" ’
-	3.添加代码，启动定时器
+   1.导入MZTimeManager文件夹到项目中
+   2.在需要使用的页面导入‘ #import "MZCountDownManager.h" ’
+   3.添加代码，启动定时器
 	 MZCountDownManager* manger = [[MZCountDownManager alloc] initWithManagerNotification:@"TwoViewControllerNotification"];
-    [manger start];
+     [manger start];
     
    4. 考虑到可能存在多个倒计时的情况，使用了通知一对多传值
    		 接受通知
